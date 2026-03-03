@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0f1a;
+  --foreground: #e8e8e8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+/* Solana wallet adapter overrides */
+.wallet-adapter-button {
+  background-color: #d4a017 !important;
+  color: #0a0f1a !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #f0c040 !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background-color: #1a3a5c !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a3a5c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a5a8c;
+}
